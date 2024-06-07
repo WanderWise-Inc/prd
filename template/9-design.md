@@ -83,9 +83,22 @@ The app utilizes Google as its primary authentication provider to streamline the
 
 ## Infrastructure and Deployment
 
-*How is the application developed, tested and deployed?*
+### Development
+- **Frontend development**: The app's UI and interaction with the database were created using Android Studio.
+- **Backend infrastructure**: The app utilizes a Firestore database to manage its data.
+- **Version Control**: The development team uses Git for version control.
+- **CI/CD Pipeline**: To ensure the app's reliability, a CI/CD (Continuous Integration/Continuous Deployment) pipeline was set up with GitHub Actions.
 
-*Any special infrastructure requirements.*
+### Testing
+To thoroughly test the app's functionality, three types of tests were conducted:
+- **Unit testing**: Testing individual components of a feature.
+- **Integration testing**: Testing the interaction between different components of the app.
+- **End-to-end testing**: Testing a feature of the app through a user flow to check its usability and correctness.
+
+### Deployment
+- **Backend server**: The backend server will be deployed on Firebase Hosting.
+- **User access**: The app will be deployed to Google Play services to provide easy access for users.
+- **Maintainability**: Firebase Analytics, Google Analytics, and Crashlytics will be used to detect and resolve issues related to the app's performance and stability.
 
 ## Test Plan
 
