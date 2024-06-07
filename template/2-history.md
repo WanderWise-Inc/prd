@@ -7,7 +7,8 @@ were implemented, namely those related to itineraries themselves (creation,
 navigation, discovery).
 
 Our POC is lacking in several areas, however, which will need to be addressed 
-as we move on to a release-ready MVP
+as we move towards an MVP that is ready to be released to users and pitched to
+potential investors.
 
 1. Social elements: our POC, although containing a lot of core functionality,
 is lacking in terms of social elements. To create a more dynamic 

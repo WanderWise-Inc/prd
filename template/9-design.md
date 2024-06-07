@@ -2,9 +2,15 @@
 
 ## Frontend
 
-*List the key libraries, languages, components used by the MVP.*
+In WanderWise, we used exclusively kotlin and AndroidX Compose libraries for the UI. 
+The application layout and multiple layout components are built using Jetpack Compose, which offers numerous advantages. Jetpack Compose uses a declarative syntax, reducing complexity and making the codebase easier to maintain. It has built-in support for managing UI state, helping to create reactive UIs that update automatically in response to state changes.
 
-*If applicable, describe essential screens.*
+Compose integrates seamlessly with existing Android views, allowing for gradual migration of legacy code. It is fully supported by Android Studio, offering features like live previews and hot reloading for instant feedback on changes. The toolkit allows for the creation of reusable and customizable composable functions, and includes simple APIs for rich animations and transitions.
+
+Designed with performance in mind, Jetpack Compose minimizes unnecessary recompositions and uses efficient rendering techniques. It also makes building accessible apps easier with built-in support for accessibility services. Regular updates from Google ensure it stays current with the latest Android advancements, and a growing ecosystem of libraries and tools supports its use.
+
+For styling, we used *Material Design*, Google’s open-source design system. Icons in our application exclusively use Material icons, offering an easily recognisable and visualy appealing interface.
+
 
 ## Backend (Application Server Design)
 
@@ -61,13 +67,54 @@ in-memory cache with *"one-hit-wonder"* itineraries, for example.
 
 ## Data Model
 
-*What data are you collecting / managing?*
+### Data Collection and Management
 
-*How is it organised?*
+As this is an app designed to create and share itineraries, we need to store user information and itinerary details. Additionally, we use the user's location and photo gallery for enhanced functionality.
 
-*Where is it stored?*
+- **Profiles:**
+  - Each profile is identified by a `user uid`, which serves as the key in the "profiles" collection.
+  - Profiles contain the following information:
+    - `username`
+    - `list of liked itineraries` (stored as itinerary uids, acting as foreign keys to the "itineraries" collection)
 
-*How is it shared/copied/cached?*
+- **Itineraries:**
+  - Each itinerary is identified by an `itinerary uid`, which serves as the key in the "itineraries" collection.
+  - Itinerary details include:
+    - `user uid` (of the creator)
+    - `list of locations`
+    - Additional information:
+      1. Description
+      2. Number of likes
+      3. Price
+      4. Tags (maximum of 3)
+      5. Title
+      6. Visibility (private or public)
+
+- **Images:**
+  - Related to `profile pictures` and `itinerary pictures`.
+
+- **Firestore:**
+  - `profiles` collection: Contains user information.
+  - `itineraries` collection: Contains itinerary information.
+
+- **Firebase Storage:**
+  - `images/itineraryPictures`: Stores images related to itineraries.
+  - `images/profilePicture`: Stores profile pictures.
+
+- **Firebase Authentication:**
+  - Manages logged-in users. Passwords are securely stored by Google, only user emails are stored in our collections.
+
+- **Data Sharing:**
+  - Firestore is used for data sharing. The `profiles` collection consists of documents identified by `user uid`. Each profile document includes a list of `itinerary uids` for the itineraries liked by the user (those `uids` can be used to identify the corresponding itineraries in the collection).
+  - The `itineraries` collection also consists of documents identified by `itinerary uid`, with a `user uid` field to link back to the user who created the itinerary.
+
+- **Image Management:**
+  - Images are stored in Firebase Storage and linked to itineraries and profiles using a unique `uid` (`user uid` or `itinerary uid`).
+
+- **Caching:**
+  - Caching is implemented for liked itineraries. Users can click a button on the like screen to save itineraries for offline access. (A more optimized approach would involve automatically storing liked itineraries during app usage.)
+
+This organization ensures efficient data management, sharing, and caching, leveraging Firebase's robust backend services.
 
 ## Security Considerations
 
@@ -83,9 +130,22 @@ The app utilizes Google as its primary authentication provider to streamline the
 
 ## Infrastructure and Deployment
 
-*How is the application developed, tested and deployed?*
+### Development
+- **Frontend development**: The app's UI and interaction with the database were created using Android Studio.
+- **Backend infrastructure**: The app utilizes a Firestore database to manage its data.
+- **Version Control**: The development team uses Git for version control.
+- **CI/CD Pipeline**: To ensure the app's reliability, a CI/CD (Continuous Integration/Continuous Deployment) pipeline was set up with GitHub Actions.
 
-*Any special infrastructure requirements.*
+### Testing
+To thoroughly test the app's functionality, three types of tests were conducted:
+- **Unit testing**: Testing individual components of a feature.
+- **Integration testing**: Testing the interaction between different components of the app.
+- **End-to-end testing**: Testing a feature of the app through a user flow to check its usability and correctness.
+
+### Deployment
+- **Backend server**: The backend server will be deployed on Firebase Hosting.
+- **User access**: The app will be deployed to Google Play services to provide easy access for users.
+- **Maintainability**: Firebase Analytics, Google Analytics, and Crashlytics will be used to detect and resolve issues related to the app's performance and stability.
 
 ## Test Plan
 

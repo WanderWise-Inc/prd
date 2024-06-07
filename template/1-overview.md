@@ -15,15 +15,6 @@ their preferences and needs.
 Our app is free, and primarily targets the 18 to 35 
 year age range that travel independently and are active on social media.
 
-
-The user can now navigate the app for different 
-reasons, whether he wants to create an itinerary that he went through by 
-selecting the starting and finishing point amongst intermediates points, or 
-interactively save an itinerary that he is currently walking, but also as 
-mentioned before he can pick an itinerary to discover, allowing you to have a 
-social aspect to this app so that many users can interact by discovering new 
-trips and by “liking” them. 
-
 The app is mostly indepedent of third party services, with the exception of 
 some Google APIs that are used for displaying itineraries and handling 
 authentication seamlessly. 
