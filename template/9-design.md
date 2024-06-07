@@ -69,11 +69,7 @@ in-memory cache with *"one-hit-wonder"* itineraries, for example.
 
 ### Data Collection and Management
 
-**What data are you collecting/managing?**
-
 As this is an app designed to create and share itineraries, we need to store user information and itinerary details. Additionally, we use the user's location and photo gallery for enhanced functionality.
-
-**How is it organized?**
 
 - **Profiles:**
   - Each profile is identified by a `user uid`, which serves as the key in the "profiles" collection.
@@ -97,8 +93,6 @@ As this is an app designed to create and share itineraries, we need to store use
 - **Images:**
   - Related to `profile pictures` and `itinerary pictures`.
 
-**Where is it stored?**
-
 - **Firestore:**
   - `profiles` collection: Contains user information.
   - `itineraries` collection: Contains itinerary information.
@@ -109,8 +103,6 @@ As this is an app designed to create and share itineraries, we need to store use
 
 - **Firebase Authentication:**
   - Manages logged-in users. Passwords are securely stored by Google, only user emails are stored in our collections.
-
-**How is it shared/copied/cached?**
 
 - **Data Sharing:**
   - Firestore is used for data sharing. The `profiles` collection consists of documents identified by `user uid`. Each profile document includes a list of `itinerary uids` for the itineraries liked by the user (those `uids` can be used to identify the corresponding itineraries in the collection).
