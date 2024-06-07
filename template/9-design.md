@@ -61,13 +61,62 @@ in-memory cache with *"one-hit-wonder"* itineraries, for example.
 
 ## Data Model
 
-*What data are you collecting / managing?*
+### Data Collection and Management
 
-*How is it organised?*
+**What data are you collecting/managing?**
 
-*Where is it stored?*
+As this is an app designed to create and share itineraries, we need to store user information and itinerary details. Additionally, we use the user's location and photo gallery for enhanced functionality.
 
-*How is it shared/copied/cached?*
+**How is it organized?**
+
+- **Profiles:**
+  - Each profile is identified by a `user uid`, which serves as the key in the "profiles" collection.
+  - Profiles contain the following information:
+    - `username`
+    - `list of liked itineraries` (stored as itinerary uids, acting as foreign keys to the "itineraries" collection)
+
+- **Itineraries:**
+  - Each itinerary is identified by an `itinerary uid`, which serves as the key in the "itineraries" collection.
+  - Itinerary details include:
+    - `user uid` (of the creator)
+    - `list of locations`
+    - Additional information:
+      1. Description
+      2. Number of likes
+      3. Price
+      4. Tags (maximum of 3)
+      5. Title
+      6. Visibility (private or public)
+
+- **Images:**
+  - Related to `profile pictures` and `itinerary pictures`.
+
+**Where is it stored?**
+
+- **Firestore:**
+  - `profiles` collection: Contains user information.
+  - `itineraries` collection: Contains itinerary information.
+
+- **Firebase Storage:**
+  - `images/itineraryPictures`: Stores images related to itineraries.
+  - `images/profilePicture`: Stores profile pictures.
+
+- **Firebase Authentication:**
+  - Manages logged-in users. Passwords are securely stored by Google, only user emails are stored in our collections.
+
+**How is it shared/copied/cached?**
+
+- **Data Sharing:**
+  - Firestore is used for data sharing. The `profiles` collection consists of documents identified by `user uid`. Each profile document includes a list of `itinerary uids` for the itineraries liked by the user (those `uids` can be used to identify the corresponding itineraries in the collection).
+  - The `itineraries` collection also consists of documents identified by `itinerary uid`, with a `user uid` field to link back to the user who created the itinerary.
+
+- **Image Management:**
+  - Images are stored in Firebase Storage and linked to itineraries and profiles using a unique `uid` (`user uid` or `itinerary uid`).
+
+- **Caching:**
+  - Caching is implemented for liked itineraries. Users can click a button on the like screen to save itineraries for offline access. (A more optimized approach would involve automatically storing liked itineraries during app usage.)
+
+This organization ensures efficient data management, sharing, and caching, leveraging Firebase's robust backend services.
 
 ## Security Considerations
 
