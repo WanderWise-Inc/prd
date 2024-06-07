@@ -3,6 +3,7 @@
 ## Personas and Scenarios
 
 The target personas are:
+
 - *The explorer*: an open-minded individual seeking to expose themself to novel experiences.
 - *The guide*: a community-focused individual that enjoys sharing their experiences, actively seeking a sense of social validation through contributing to the community.
 - *The lazy wanderer*: an individual that wants to relax, and bypassthe overhead of planning out their off-days.
@@ -31,7 +32,6 @@ For this to happen, the WanderWise app should provide *the explorer* with a rele
 For this to happen, the WanderWeise app should provide *the guide* with an itinerary creation feature that allows him to easily create itineraries. Moreover the WanderWise app should provide *the guide* with an easy way for them to share the itineraries. This means that users should be able to post their on other social media plateforms / messaging apps.
 
 ### User stories for the *lazy wanderer*
-
     1. As a lazy wanderer I would like to easily find an itinerary that will occupy me during my free time as all I care about is to have something to do without thinking too much on the what to do.
 
 For this to happen the WanderWise app should provide users with a relevant itinerary in their recommendation feed. 
