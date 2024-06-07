@@ -9,10 +9,9 @@ The target personas are:
 - *The lazy wanderer*: an individual that wants to relax, and bypassthe overhead of planning out their off-days.
 - *The careful planner*: an individual that may be accompanied by their family, potentially including elders or children. This person's main concern is planning out activities that are adapted to their situation.
 
-The key persona is the *lazy wanderer* as this person is essentially outsourcing planning tasks by using the WanderWise app. Moreover this implies that this person is more-likely to pay for features that reduce friction in any way shape or form.
+The key persona is the *the guide* as this person is essentially sourcing the app with itineraries. 
 
-*High-level scenarios to adopt, use and share the product.*
-
+## Scenario to adopt, use and share the product
 Word-of-mouth is the best and free marketing tool that the WanderWise could make use of. People love sharing travel tips, any one of the above personas would feel relieved by using the WanderWise app which makes them very likely to share the product.
 
 ## User Stories and Key Features
@@ -32,7 +31,7 @@ For this to happen, the WanderWise app should provide *the explorer* with a rele
 For this to happen, the WanderWeise app should provide *the guide* with an itinerary creation feature that allows him to easily create itineraries. Moreover the WanderWise app should provide *the guide* with an easy way for them to share the itineraries. This means that users should be able to post their on other social media plateforms / messaging apps.
 
 ### User stories for the *lazy wanderer*
-1. As a lazy wanderer I would like to easily find an itinerary that will occupy me during my free time as all I care about is to have something to do without thinking too much on the what to do.
+1. As a lazy wanderer I would like to outsource the taks on finding an itinerary that will occupy me during my free time as all I care about is to have something to do without thinking too much on the what to do.
 
 For this to happen the WanderWise app should provide users with a relevant itinerary in their recommendation feed. 
 
@@ -66,6 +65,6 @@ The success of the MVP will be measured by:
 3. Satisfaction rating: what is our google play store rating ? How is our trustpilot rating ?
 
 ## Features Outside the Scope
-- The Generation of personalized itineraries using by discussing with an AI.
+- The Generation of personalized itineraries by discussing with an AI.
 This features should be integrated into the app after we have gathered enough data, meaning we have some a few thousands itineraries available in order to fine-tune a Large Language Model with which users could then interact in order to create an itinerary. 
 
