@@ -2,9 +2,15 @@
 
 ## Frontend
 
-*List the key libraries, languages, components used by the MVP.*
+In WanderWise, we used exclusively kotlin and AndroidX Compose libraries for the UI. 
+The application layout and multiple layout components are built using Jetpack Compose, which offers numerous advantages. Jetpack Compose uses a declarative syntax, reducing complexity and making the codebase easier to maintain. It has built-in support for managing UI state, helping to create reactive UIs that update automatically in response to state changes.
 
-*If applicable, describe essential screens.*
+Compose integrates seamlessly with existing Android views, allowing for gradual migration of legacy code. It is fully supported by Android Studio, offering features like live previews and hot reloading for instant feedback on changes. The toolkit allows for the creation of reusable and customizable composable functions, and includes simple APIs for rich animations and transitions.
+
+Designed with performance in mind, Jetpack Compose minimizes unnecessary recompositions and uses efficient rendering techniques. It also makes building accessible apps easier with built-in support for accessibility services. Regular updates from Google ensure it stays current with the latest Android advancements, and a growing ecosystem of libraries and tools supports its use.
+
+For styling, we used *Material Design*, Google’s open-source design system. Icons in our application exclusively use Material icons, offering an easily recognisable and visualy appealing interface.
+
 
 ## Backend (Application Server Design)
 
