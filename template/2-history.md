@@ -1,19 +1,25 @@
 # History
 
-History of WanderWise: From Concept to Prototype
-The idea for WanderWise emerged from recognizing that travel planning was often inefficient and stressful, discouraging people from discovering new itineraries in their city or the one that they are visiting. If you're a traveler and you visit a new city, more than often you would be tempted to only visit spots that are either highly touristic or that aren't far from your place of stay. This realization led to the development of a mobile app designed to simplify and enhance the process of creating and finding travel itineraries, while also building a community of travelers.
-Learning from the Prototype : 
-The development from concept to prototype provided valuable insights. The integration of the Google Maps API was crucial, enabling real-time navigation and customizable routes, which improved the user experience significantly. Additionally, user feedback confirmed the importance of social features like liking, saving, and sharing itineraries, highlighting the community aspect of the app.
-User tests showed that while users liked the intuitive design and easy itinerary customization, they wanted more advanced filtering options to quickly find itineraries based on specific criteria such as budget, duration, and themes.
-Bridging the Gap: From PoC to MVP
-To evolve from a proof of concept (PoC) to a minimum viable product (MVP), several improvements are necessary:
-Enhanced Personalization: Implementing machine learning to tailor itinerary suggestions based on users' past behaviors and preferences could greatly boost engagement.
-Cross-Platform Availability: Extending availability to iOS is critical to reach a wider audience and test the app’s effectiveness across different user groups.
-Scalability and Performance: It's vital to ensure the app can support a high volume of users and itineraries without performance issues, potentially requiring backend optimization and cloud solutions for scalability.
-Advanced Search and Filtering: More detailed search options are needed to allow users to efficiently find ideal itineraries. This could include filters for accessibility features, environmental impact, or user ratings.
-Marketing and Community Building: A strategic marketing campaign is crucial to attract initial users and build a thriving community. This should include digital marketing and collaboration with travel influencers to increase the app's visibility and credibility.
-By addressing these areas, WanderWise aims to progress from a functional PoC to an MVP that demonstrates its value and appeals to early adopters and potential investors.
+The development of our proof-of-concept, in the context of the SwEnt course,
+provided valuable insights on getting an appliction (including relevant 
+backend) up and running. Most of the core features that we wanted to implement
+were implemented, namely those related to itineraries themselves (creation, 
+navigation, discovery).
 
+Our POC is lacking in several areas, however, which will need to be addressed 
+as we move on to a release-ready MVP
 
+1. Social elements: our POC, although containing a lot of core functionality,
+is lacking in terms of social elements. To create a more dynamic 
+user-experience and ultimately gain traction, this will need to be prioritized
+as it will require significant reworks to many parts of our existing frontend
+and infrastructure.
 
+1. Scalability: Our application's backend is heavily reliant on third party 
+APIs. Some of these can't be avoided without significant investment (e.g. 
+Google Maps and Directions APIs which proved invaluable and are difficult to
+replicate), others can be implemented in a way that is better tailored to our
+needs, namely storage. As we gain user-adoption, it becomes unsustainable to
+host everything through third party services. It is better that we take this on
+sooner rather than later
 
