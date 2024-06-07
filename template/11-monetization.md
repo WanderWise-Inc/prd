@@ -2,7 +2,6 @@
 
 ## Expected Operating Cost:
 
-
 1. Infrastructure
     - **Server Costs**: Hosting and database using Firbase and Google Cloud Services.
     - **Content Delivery Network (CDN)**: For faster and more reliable content delivery.
@@ -12,11 +11,11 @@
     - **Digital Marketing**: Social media ads, Google Ads, influencer partnerships.
     - **Content Marketing**: Blog posts, SEO, and community engagement.
 
-7. Legal and Compliance
+3. Legal and Compliance
     - **Legal Fees**: Costs for legal advice, contracts, and compliance with regulations.
     - **Insurance**: Business insurance to cover various risks.
 
-8. Miscellaneous
+4. Miscellaneous
     - **Payment Processing Fees**: In order to make allow users to sponsor itineraries.
     - **Banking and Transaction Fees**: Costs associated with financial transactions.
     - **Community Engagement**: Costs for organizing community events, meetups, or partnerships with travel influencers.
@@ -36,6 +35,7 @@ Estimated Monthly Cost Breakdown
 
 ## Revenue Streams 
 We see two potential revenue streams:
+
 1. Partnership with private companies and Tourism Offices in order to promote specific itineraries making them appear on the feed of more customers. For instance, a bar owner could sponsor existing itineraries or create an itinerary that include a stop at the place. 
 2. Advertisement seamlessly included in the user experience of the app in. Meaning the advertisement has the form of an itinerary in the feed, in order not to disturb the user as some pop up advertisement could.
 
