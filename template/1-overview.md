@@ -11,21 +11,15 @@ contribute to a diverse array of travel itineraries. Through intuitive
 features such as customizable routes, detailed tagging options (including price, 
 time, and thematic tags), and the ability to toggle between public and private 
 itineraries, WanderWise empowers users to tailor their travel experiences to 
-their preferences and needs. 
-Our app is free, and primarily targets the 18 to 35 
-year age range that travel independently and are active on social media.
+their preferences and needs. Our app is free, and primarily targets the 18 to 35 
+year age range that travel independently and are likely to post on social media.
 
 The app is mostly indepedent of third party services, with the exception of 
 some Google APIs that are used for displaying itineraries and handling 
-authentication seamlessly. 
-The app uses the Google Maps API for a smoother usage of an extensive existing 
-platform while also allowing the user to sign in with his Google account. The 
-app is free for use and was developed to target a wide age range of 18+. 
-Currently only available on Android with an offline functionality to still 
-access your “liked” and created itineraries, our goal is to extend to IOS for a 
-larger audience.
-In essence, WanderWise is your ultimate travel companion, offering a convenient 
-and efficient solution for both novice and seasoned travelers alike. With 
-WanderWise, embark on your next adventure with confidence, knowing that 
-comprehensive trip planning is just a few taps away.
+authentication seamlessly. Currently, our application is only available on
+android, however we aim to port it to iOS to reach a larger audience.
+
+In essence, WanderWise is the perfect travel companion: your notebook for
+jotting down memories, your tour guide for showing you new spots. It is adapted
+to your needs, and is suited for novice and seasoned travelers alike.
 
