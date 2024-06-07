@@ -19,27 +19,27 @@ Word-of-mouth is the best and free marketing tool that the WanderWise could make
 
 ### User stories for *the explorer*
 
-    1. As an explorer currently in my home town, I would like to go on to rediscover my surroundings from a novel point of view as this would fulfill my need to *get out there* at any time. 
-    2. As an explorer currently in a new city, I would like to discover a new culture by doing some local activities in order to live an other person's experience.
+1. As an explorer currently in my home town, I would like to go on to rediscover my surroundings from a novel point of view as this would fulfill my need to *get out there* at any time. 
+2. As an explorer currently in a new city, I would like to discover a new culture by doing some local activities in order to live an other person's experience.
 
 For this to happen, the WanderWise app should provide *the explorer* with a relevant recommendation feed that keeps some novelty in order not to have the explorer repeat the same / similar activites as what matters most to them is novelty.
 
 ### User stories for *the guide*:
 
-    1. As a guide, I would like to be able to create and share itineraries as I would like to be able to contribute to the community in order to feel socially validated.
-    2. As a guide, I would like ot be able to have some form of feedback from the people that followed my itineraries as I would like to provide the best possible itineraries in order to feel socially validated.
+1. As a guide, I would like to be able to create and share itineraries as I would like to be able to contribute to the community in order to feel socially validated.
+2. As a guide, I would like ot be able to have some form of feedback from the people that followed my itineraries as I would like to provide the best possible itineraries in order to feel socially validated.
 
 For this to happen, the WanderWeise app should provide *the guide* with an itinerary creation feature that allows him to easily create itineraries. Moreover the WanderWise app should provide *the guide* with an easy way for them to share the itineraries. This means that users should be able to post their on other social media plateforms / messaging apps.
 
 ### User stories for the *lazy wanderer*
-    1. As a lazy wanderer I would like to easily find an itinerary that will occupy me during my free time as all I care about is to have something to do without thinking too much on the what to do.
+1. As a lazy wanderer I would like to easily find an itinerary that will occupy me during my free time as all I care about is to have something to do without thinking too much on the what to do.
 
 For this to happen the WanderWise app should provide users with a relevant itinerary in their recommendation feed. 
 
 ### User stories for the *careful planner*
 
-    1. As a careful planner I would like to be able to find itineraries that match my criterion as I would like to ensure that the activities are adapted to my situation.
-    2. As a careful planner I would like to have access to reviews of the itineraries as I would like to have social proof that the itinerary is well suited to my situation given that someone in a similar situation confirmed it.
+1. As a careful planner I would like to be able to find itineraries that match my criterion as I would like to ensure that the activities are adapted to my situation.
+2. As a careful planner I would like to have access to reviews of the itineraries as I would like to have social proof that the itinerary is well suited to my situation given that someone in a similar situation confirmed it.
 
 For this to happen, the WanderWise app should provide the users with an extensive criterion entry capability (time, price, suitability for people with reduced mobility, children..).
 Moreover the WanderWise app should provide the capability to comment and read comments on public itineraries.
